@@ -1,7 +1,9 @@
 # The SDK and iOS version to target. This is specifying the iOS 14.4 SDK and minimum build target as iOS 14.0
-TARGET = iphone:14.4:14.0
+TARGET := iphone:clang:latest:14.0
 # The archiectures to compile for, arm64 is fine for most apps
 ARCHS = arm64
+THEOS_PACKAGE_SCHEME = rootless
+FINALPACKAGE = 1
 
 # The name of the process to kill upon install, the name of your app
 INSTALL_TARGET_PROCESSES = debloader
